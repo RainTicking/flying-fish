@@ -1,0 +1,15 @@
+.oldsql {
+    float: left;
+    position: relative;
+    min-height: 800px;
+    margin-bottom: 15px;
+    width: 49.5%;
+}
+
+.newsql {
+    float: right;
+    margin-bottom:15px;
+    width: 49.5%;
+    position: relative;
+}
+

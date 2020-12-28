@@ -1,0 +1,62 @@
+.login_container {
+    background-image: url(../img/login.jpg) ; 
+    background-size: cover;
+    -webkit-background-size:cover; 
+    -o-backgroupnd-size:cover; 
+    width: 100%; 
+    height: 800px; 
+    border-width: 0px; 
+    border-style:solid;
+}
+
+.login-box {
+    position:relative;
+    top: 180px;
+    right: 130px;
+    width: 270px;
+    height: 320px;
+    border-width: 2px;
+    float: right;
+    background-color: #3b3a3a;
+    opacity:0.8;
+    text-align: center;
+}
+
+.login-box h1 {
+    color: #fff;
+    margin-top: 15px;
+}
+
+.login-box .form .item{
+    margin-top: 25px;
+}
+
+.login-box .form .item input {
+    border: 0;
+    width: 150px;
+    /* 字体大小 */
+    font-size: 18px;
+    /* 下边框 */
+    border-bottom: 2px solid #fff;
+    /* 内边距 */
+    padding: 5px 10px;
+    background: #ffffff00; 
+    /* 字体颜色 */
+    color:#fff;
+    /* placeholder */
+    
+}
+
+.login-box .form .submit-button{
+    margin-top: 60px;
+}
+
+.login-box .form .submit-button input{
+    width: 130px;
+    height: 30px;
+    border: 0;
+    font-size: 20px;
+    background-color: #00bfff;
+    border-radius: 15px;
+    cursor:pointer;
+}

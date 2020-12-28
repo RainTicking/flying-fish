@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class=" ">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="renderer" content="webkit">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>飞鱼</title> 
+        <meta name="keywords" content="">
+        <meta name="description" content="">
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/bootstrap.min.css') }}">
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/style.css') }}"> 
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/task_detail.css') }}"> 
+        <link rel="shortcut icon" href="{{ url_for('static',filename='img/favicon.ico') }}">
+        <script src="{{ url_for('static',filename='js/jquery.js') }}"></script>
+    </head>
+    <body class="user-select">
+        <header class="header">
+            <nav class="navbar navbar-default" id="navbar" style="position: relative; top: 0px;">
+            <div class="container">
+                <div class="header-topbar hidden-xs link-border" style="display: block;">
+                    <ul class="site-nav topmenu">
+                        <li><a href="{{ url_for('login') }}" draggable="false">{{ ucode }}</a></li>
+                        <li><a href="{{ url_for('login_out') }}" draggable="false">退出</a></li>
+                    </ul> 
+                </div>
+                <div class="navbar-header">
+                    <h1 class="logo hvr-bounce-in">
+                        <img src="{{ url_for('static',filename='img/favicon1.ico') }}" alt="飞鱼" draggable="false">
+                    </h1>
+                </div>
+                <div class="collapse navbar-collapse" id="header-navbar" >
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a data-cont="任务性能优化" title="任务性能优化" href="{{ url_for('index') }}" draggable="false">任务性能优化</a></li>
+                        <li><a data-cont="Adhoc查询优化" title="Adhoc查询优化" href="#" draggable="false">Adhoc查询优化</a></li>
+                        <li><a data-cont="数据血缘优化" title="数据血缘优化" href="#" draggable="false">数据血缘优化</a></li>
+                        <li><a data-cont="字段血缘分析" title="字段血缘分析" href="#" draggable="false">字段血缘分析</a></li>
+                        <li><a data-cont="SQL调优文章" title="SQL调优文章" href="#" draggable="false">精选文章</a></li>
+                        <li><a data-cont="留言板" title="留言板" href="#" draggable="false">留言板</a></li>
+                    </ul>
+                </div>
+            </div>
+            </nav>
+        </header>
+        <section class="container">
+        <div class="oldsql">
+            <div class="widget widget_hot">
+                <h3>原始SQL</h3>
+                <textarea class="textarea" wrap="off" style="width: 100%; height: 730px; border-width: 0px; resize:none; overflow:auto; word-wrap: normal;">{{ original_sql }}</textarea>
+            </div>
+        </div>
+        <aside class="newsql">
+            <div class="widget widget_hot">
+                <h3>优化后SQL</h3>
+                <textarea class="textarea" wrap="off" style="width: 100%; height: 730px; border-width: 0px; resize:none; overflow:auto; word-wrap: normal;">{{ optimized_sql }}</textarea>
+            </div>
+        </aside>
+        </section>
+        <footer class="footer">
+            <div class="container">
+                <p>Copyright © 2020.Company Beike All rights reserved.</p>
+            </div>
+            <div id="gotop" style="display: none;">
+                <a class="gotop" draggable="false"></a>
+            </div>
+        </footer>
+    </body>
+</html>
